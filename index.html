@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garry</title>
+    <h1>Garry's page</h1>
+</head>
+<body>
+    <style>
+        .top-container {background-color: #f1f1f1;padding: 25px;text-align: center;
+    }
+        .header {padding: 10px 16px;background: #C87320;color: #f1f1f1; font-size:20px;
+    }
+        .content {padding: 150px;
+    }
+        .sticky {position: fixed;top: 0;width: 100%
+    }
+        .footer {position: fixed;left: 0;bottom: 0;width: 100%;background-color: gainsboro;color: black;text-align: center;
+    }
+        .sticky + .content {padding-top: 102px;
+    }
+      
+    </style>
+        
+    <div class="top-container">
+        <img id="logo" style="size: 10%" src="GG_1_2.png"width="20%">
+    </div>
+    <div class="header" id="myHeader"><h2 style="font-family: Arial Narrow, sans-serif; font-variant: small-caps; text-align:center;"> Garry With Two R's</h2>
+        </div>
+    <img src="92F44950-9337-4DE3-BEA9-7E0C3D391195 (2).jpeg"style="width:576px;height:1024px;">
+        <span style="display:block; height: 45px;"></span>
+    <div class="footer" id="myfooter"><p style="font-family:Blippo, fantasy;">Gmail: garry.gage@ucollege.edu</p></div>
+    
+    <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {if (window.pageYOffset > sticky) {header.classList.add("sticky");
+    } 
+        else {header.classList.remove("sticky");
+      }
+    }
+    </script>
+    My name is Garry 
+    <p>I worked at at Mills Spring Ranch as the the head camp manger running the camp all summer in my free time I work as a cowboy for the rest of the summer. 
+        One of my strengths is problem in the construction world. I am excited about improving my computer skills.
+        And am concerned about getting lost in my assignment.
+        I am not a computer savvy guy but i can grow my skills in this field from this class.
+        Thank for your time. 
+    </p>
+    <p>I add a footer and a header color to the header imgs </p>
+</body>
+
+</html>
